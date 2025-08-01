@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARHAV</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+   
+  <!-- ENCABEZADO -->
+  <header class="menu-contenedor">
+    <div class="logo">
+      <img src="Logos/Diseño sin título (1).png" alt="CARHAV Logo" />
+    </div>
+    <nav class="navbar">
+      <a href="Index.html">Inicio</a>
+      <a class="active" href="Vehículos.html">Vehículos</a>
+      <a href="Surcursales.html">Sucursales</a>
+      <a href="Servicios.html">Servicios</a>
+      <a href="Garantía.html">Garantía</a>
+      <a href="Contactos.html">#Contactoss</a>
+    </nav>
+  </header>
+
+
+  <!-- CATÁLOGO DE AUTOS -->
+  <section class="autos-grid" id="vehiculos">
+    <div class="auto-card">
+      <img src="Carros img/05d70be1cb509a634eb6c9a7042e48e9 (1).jpg" alt="Auto 1">
+      <h3>Jeep Wrangler</h3>
+      <p>$100,000</p>
+      <button class="btn-ver">&hearts;</button>
+    </div>
+
+    <div class="auto-card">
+      <img src="Carros img/imgen2.jpeg.crdownload" alt="Auto 2">
+      <h3> Lamborguini Huracán</h3>
+      <p>$150,999</p>
+      <button class="btn-ver">&hearts;</button>
+    </div>
+
+    <div class="auto-card">
+      <img src="Carros img/imagen6.jpeg.crdownload" alt="Auto 3">
+      <h3>Nissan GT-R</h3>
+      <p>$120,000</p>
+      <button class="btn-ver">&hearts;</button>
+    </div>
+  </section>
+
+  <!-- CARRUSEL -->
+  <section class="Carrusel">
+    <div class="carrusel-wrapper">
+      <div class="carrusel-item">
+        <img class="slide" src="Carros img/lado.jpg.crdownload" alt="BMW M4 G82" />
+        <div class="textito">BMW M4 G82</div>
+      </div>
+      <div class="carrusel-item">
+        <img class="slide" src="Carros img/cara.jpg.crdownload" alt="BMW M4 G82" />
+        <div class="textito">BMW M4 G82</div>
+      </div>
+      <div class="carrusel-item">
+        <img class="slide" src="Carros img/otrolado.jpg.crdownload" alt="BMW M4 G82" />
+        <div class="textito">BMW M4 G82</div>
+      </div>
+      <div class="carrusel-item">
+        <img class="slide" src="Carros img/partetrasera.jpg.crdownload" alt="BMW M4 G82" />
+        <div class="textito">BMW M4 G82</div>
+      </div>
+
+      <div class="controles">
+        <span onclick="plusDivs(-1)">&#10094;</span>
+        <span onclick="plusDivs(1)">&#10095;</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      let i;
+      const items = document.getElementsByClassName("carrusel-item");
+      if (n > items.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = items.length }
+      for (i = 0; i < items.length; i++) {
+        items[i].style.display = "none";
+      }
+      items[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+<footer>
+    <p>&copy; 2025 <strong>CARHAV S.V.</strong> Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram: <a href="https://instagram.com/CARHAV_SV" target="_blank">@CARHAV_SV</a> | Teléfono: +503 2267‑8977</p>
+  </footer>
+
+</body>
+</html>

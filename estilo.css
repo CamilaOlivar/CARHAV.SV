@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+ 
+    footer {
+      background-color: #8D1E1E; /* color de header y footer */
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+    }
+
+/* Menú y logo */
+.menu-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  background-color: #8D1E1E;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #E5E5E5;
+}
+
+/* Catálogo de autos */
+.autos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #E5E5E5;
+}
+
+.auto-card {
+  background-color: #000000;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.auto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.auto-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #E5E5E5;
+}
+
+.auto-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e60000;
+}
+
+.auto-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-ver {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-ver:hover {
+  background-color: darkred;
+}
+
+/* Carrusel refinado */
+.Carrusel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: #E5E5E5;
+}
+
+.carrusel-wrapper {
+  width: 600px;
+  max-width: 90%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carrusel-item {
+  display: none;
+}
+
+.carrusel-item img.slide {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+}
+
+.textito {
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #8D1E1E;
+  color: white;
+  font-weight: bold;
+}
+
+/* Botones de control del carrusel */
+.controles {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 15px;
+}
+
+.controles span {
+  cursor: pointer;
+  font-size: 28px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 14px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.controles span:hover {
+  background: rgba(0,0,0,0.9);
+}

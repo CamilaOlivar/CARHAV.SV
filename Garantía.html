@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARHAV - Garantía de vehículos</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: white; /* color de fondo */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header{
+    background-color: #8D1E1E; /* color de header y footer */
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+      font-family: Arial,;
+      font-size: 30px;
+      margin: 0;
+    }
+    footer {
+      background-color: #8D1E1E; /* color de header y footer */
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      justify-items: center;
+    }
+    .galeria img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    main h3 {
+      margin-top: 1.5em;
+      font-size: 30px;
+    }
+    p{
+          margin-top: 1.5em;
+      font-size: 20px;
+    }
+    li{
+         margin-top: 1.5em;
+      font-size: 20px;
+    }
+    footer p {
+      margin: 05px 0;
+      font-size: 15px;
+    }
+    footer a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <style>
+        /* Logo en la esquina superior izquierda */
+        .logo {
+            position: absolute;
+            top: 5px;
+            left: 17px;
+            width: 250px; 
+            height: auto;
+            z-index: 1000;
+        }
+       
+  
+    </style>
+</head>
+<body>
+
+    <!-- Imagen del logo -->
+    <img src="Logos/Diseño sin título (1).png"class="logo"> 
+
+  
+    <nav>
+      <a href="Index.html">Inicio</a>
+      <a href="Vehículos.html">Vehículos</a>
+      <a href="Surcursales.html">Sucursales</a>
+      <a href="Servicios.html">Servicios</a>
+       <a class="active"  href="Garantía.html">Garantía</a>
+      <a href="Contactos.html">Contactos</a>
+    </nav>
+    <h1>CARHAV</h1>
+  </header>
+
+  <!-- Galería de 3 imágenes horizontales antes del contenido -->
+  <div class="galeria">
+    <img src="Carros img/2021-jeep-wrangler-rubicon-392-front-view.jpg">
+    <img src="Carros img/05d70be1cb509a634eb6c9a7042e48e9 (1).jpg">
+    <img src="Carros img/2021-jeep-wrangler-rubicon-392-front-view.jpg">
+  </div>
+
+  <main>
+    <h3>¿Qué es una garantía para carros?</h3>
+    <p>Una garantía para carros es un acuerdo entre el fabricante o vendedor y el comprador, donde se comprometen a reparar o reemplazar ciertas partes del vehículo si presentan defectos de fabricación o problemas dentro de un período de tiempo determinado o kilometraje. Es una promesa de calidad y respaldo que protege al comprador contra posibles fallas o averías.</p>
+
+    <h3>¿Qué cubre generalmente la garantía?</h3>
+    <ul>
+      <li><strong>Defectos de fabricación:</strong> Fallas en ensamblaje o materiales defectuosos.</li>
+      <li><strong>Sistemas mecánicos principales:</strong> Motor, transmisión y sistemas esenciales.</li>
+      <li><strong>Componentes cubiertos:</strong> Dirección, suspensión, frenos, sistema de enfriamiento y sistema eléctrico.</li>
+    </ul>
+
+    <h3>¿Qué NO cubre la garantía?</h3>
+    <ul>
+      <li><strong>Desgaste normal:</strong> Neumáticos, pastillas de freno u otros consumibles.</li>
+      <li><strong>Mantenimiento de rutina:</strong> Cambio de aceite, filtros, etc.</li>
+      <li><strong>Daños por accidente o mal uso:</strong> Daños por choques, vandalismo o uso inadecuado.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <strong>CARHAV S.V.</strong> Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram: <a href="https://instagram.com/CARHAV_SV" target="_blank">@CARHAV_SV</a> | Teléfono: +503 2267‑8977</p>
+  </footer>
+
+</body>
+</html>

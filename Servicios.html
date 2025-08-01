@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARHAV</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    /* Encabezado  */
+    .menu-contenedor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: #8D1E1E;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo img {
+            position: absolute;
+            top: 5px;
+            left: 17px;
+            width: 250px; 
+            height: auto;
+            z-index: 1000;
+        }
+    
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .navbar a.active,
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #8D1E1E;
+    }
+
+    .servicio {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .servicio img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
+    .servicio ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .servicio {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .servicio img {
+        margin: 0 0 20px 0;
+      }
+
+      .servicio ul {
+        padding-left: 0;
+      }
+    }
+
+    footer {
+      background-color: #8D1E1E;
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+   
+
+  </style>
+</head>
+<body>
+    
+
+  
+  <header class="menu-contenedor">
+    <div class="logo">
+      <!-- Imagen del logo -->
+    <img src="Logos/Diseño sin título (1).png"class="logo">
+    </div>
+    <nav class="navbar">
+      <a href="Index.html">Inicio</a>
+      <a href="Vehículos.html">Vehículos</a>
+      <a href="Surcursales.html">Sucursales</a>
+      <a  href="Servicios.html">Servicios</a>
+      <a href="Garantía.html">Garantía</a>
+      <a href="Contactos.html">Contactos</a>
+    </nav>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="Servicios">
+    <h3>🚗 Servicios que ofrecemos</h3>
+
+    <div class="servicio">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.edcfuMeiOXeJNZ3DOSRL7AHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Compra y Venta">
+      <div>
+        <h4>🚘 Compra y Venta de Carros</h4>
+        <ul>
+          <li>Publica tu carro en minutos desde la app.</li>
+          <li>Encuentra vehículos nuevos y usados de marcas como Nissan, Mercedes y Lamborghini.</li>
+          <li>Comparación de precios y modelos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://th.bing.com/th/id/R.429fe8ffd39aef5cd628833907e17dd9?rik=oKPQaAgHAJTxhQ&pid=ImgRaw&r=0" alt="Inspección">
+      <div>
+        <h4>🔍 Inspección y Verificación</h4>
+        <ul>
+          <li>Revisión de documentos y estado mecánico.</li>
+          <li>Garantía incluida en vehículos seleccionados.</li>
+          <li>Informe del historial del vehículo.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.ezcNihJbTAC6ixpgnR8T-wHaEm?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mantenimiento">
+      <div>
+        <h4>🛠️ Mantenimiento y Taller</h4>
+        <ul>
+          <li>Agenda citas para revisión o reparación.</li>
+          <li>Talleres certificados con mecánicos expertos.</li>
+          <li>Consulta precios y disponibilidad desde la app.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://th.bing.com/th/id/R.62628dace6773dcd5f96771e7a1e96d3?rik=Ru7xSNTkPrVcbA&pid=ImgRaw&r=0" alt="Limpieza">
+      <div>
+        <h4>🧼 Servicios Adicionales</h4>
+        <ul>
+          <li>Limpieza profesional (interior y exterior).</li>
+          <li>Pulido y detallado.</li>
+          <li>Instalación de accesorios.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://cdn.motor1.com/images/mgl/Av02V/s1/2022-nissan-gt-r-nismo-special-edition.jpg" alt="Asistencia en carretera">
+      <div>
+        <h4>🚨 Asistencia en carretera 24/7</h4>
+        <ul>
+          <li>Grúa, cambio de llanta, carga de batería.</li>
+          <li>Solicítalo con un clic desde la app.</li>
+          <li>Disponible en varias zonas de El Salvador.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="servicio">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.v9r5MI8QBLBTHiM1UTQ18QHaEf?r=0&w=599&h=363&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Por qué elegirnos">
+      <div>
+        <h4>✅ ¿Por qué elegirnos?</h4>
+        <ul>
+          <li>Atención rápida y confiable.</li>
+          <li>Precios cómodos y transparentes.</li>
+          <li>Servicios verificados por profesionales.</li>
+          <li>Todo desde tu celular, sin complicaciones.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ESTILO UNIFICADO -->
+  <footer>
+    <p>&copy; 2025 <strong>CARHAV S.V.</strong> Todos los derechos reservados.</p>
+    <p>Síguenos en Instagram: <a href="https://instagram.com/CARHAV_SV" target="_blank">@CARHAV_SV</a> | Teléfono: +503 2267‑8977</p>
+  </footer>
+
+</body>
+</html>
